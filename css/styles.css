@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+
+}
+
+#title {
+	display: flex;
+	background-image:url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 70vh;
+}
+
+#name {
+	font-size: 2.2vw;
+	font-style: italic;
+	color:white;
+	width: 16.66%;
+	text-align: center;
+}
+
+#slogan {
+	margin:0px;
+	border: 0px;
+	padding:0.8vh;
+	width: 41.66%;
+	height: 12vh;
+	font-size:1vw;
+	color: rgb(255, 255, 255);
+	
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+	float: right;
+	width: 41.66%;
+	height: 12vh;
+}
+ 
+
+ 
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+	text-align: center;
+	font-size:1vw;
+	float: right;
+    padding: 0.8vw 0.4vh;
+    text-decoration: none;
+}
+ 
+/*鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background-color: rgb(87, 83, 83);
+}
+#logo{
+	width:16.66%;
+	height: 12vh;
+	text-align: center;
+}
+
+#show {
+	float: left;
+	display: flex;
+}
+#show1 {
+	width: 33.33vw;
+	height: 50vh;
+}
+#show2 {
+	width: 33.33vw;
+	height: 50vh;
+}
+#show3 {
+	width: 33.33vw;
+	height: 50vh;
+}
