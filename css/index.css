@@ -25,12 +25,12 @@
 #slogan {
 	margin:0px;
 	border: 0px;
-	padding:0.8vh;
+	padding:0vh;
 	width: 41.66%;
-	height: 12vh;
+	height: 10vh;
 	font-size:1vw;
 	color: rgb(255, 255, 255);
-	
+
 }
 
 ul {
@@ -41,6 +41,7 @@ ul {
 	float: right;
 	width: 41.66%;
 	height: 12vh;
+	display: flex;
 }
  
 
@@ -52,7 +53,8 @@ li a {
 	font-size:1vw;
 	float: right;
     padding: 0.8vw 0.4vh;
-    text-decoration: none;
+	text-decoration: none;
+	width: 4.8vw
 }
  
 /*鼠标移动到选项上修改背景颜色 */
@@ -65,19 +67,38 @@ li a:hover {
 	text-align: center;
 }
 
+
 #show {
+	width: 100%;
+	padding: 0vw;
+	margin: 0vw;
+	text-align: center;
+}
+
+#show_pic {
+	text-align: center;
+	padding: 10vh;
+	width: 33.3%;
 	float: left;
-	display: flex;
+	
 }
-#show1 {
-	width: 33.33vw;
-	height: 50vh;
+
+#show_title {
+	float:left;
+	width: 33.3%;
+	text-align: center;
+    
 }
-#show2 {
-	width: 33.33vw;
-	height: 50vh;
+#show_intr {
+	text-align: justify;
+	margin: 2vh 0vw;
+	width: 33.3%;
+	float: left;
+	padding: 0.1vh 2vw;
 }
-#show3 {
-	width: 33.33vw;
-	height: 50vh;
+
+#learn_more {
+	float: left;
+	text-align: center;
+	width: 33.3%;
 }

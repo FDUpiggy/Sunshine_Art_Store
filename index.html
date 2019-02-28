@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>圣翔艺术商城</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/login_or_register.css">
 </head>
 <body>
     <div class="header">
@@ -16,56 +17,100 @@
                 <p>圣翔艺术商城</p>
             </div>
             <div id="slogan">
-                <p >Position zero，this is tendomaya!</p>
+                <p ><br>Position zero，this is tendomaya!</p>
             </div>
             <ul class="header-choice" id="navbar">
                 <li>
-                    <a href="register.html" id="register"  title="注册">注册</a>
-                </li>
-                <li>
-                    <a href="login.html" id="login"  title="登陆">登陆</a>
-                </li>
-                <li>
-                    <a href="details.html" id="details"  title="详情">详情</a>
+                    <a href="index.html" id="home" >首页</a>
                 </li>
                 <li>
                     <a href="search.html" id="search" title="搜索">搜索</a>
                 </li>
                 <li>
-                    <a href id="home" >首页</a>
+                    <a href="details.html" id="details"  title="详情">详情</a>
+                </li>
+                <li>
+                    <a href="javascript:login_model()"; id="login"  title="登陆">登陆</a>
+                </li>
+                <li>
+                    <a href="register.html" id="register"  title="注册">注册</a>
                 </li>
             </ul>
-        </div>
+        </dv>i
     </div>
     <div class>
-        <div class="show" id='show'>
-            <div id="show1">
-                <div id="show1_pic">
-                    <img src="images/background.jpg" width="33.33vw">
+        <div class="show" id='show_canvas'>
+            <div id="show">
+                <div id='pic'>
+                    <div id="show_pic">
+                        <img src="images/author.jpg" width="20%" >
+                    </div>
+                    <div id="show_pic">
+                        <img src="images/author.jpg" width="20%" >
+                    </div>
+                    <div id="show_pic">
+                        <img src="images/author.jpg" width="20%" >
+                    </div>
                 </div>
-                <div id="show1_intr">
-                    <p>213 </p>
+                <div id="s_title">
+                    <div id="show_title">
+                        <p>这是标题 </p>
+                    </div>
+
+                    <div id="show_title">
+                        <p>这是标题 </p>
+                    </div>
+                    <div id="show_title">
+                        <p>这是标题 </p>
+                    </div>
                 </div>
-            </div>
-            <div id="show2">
-                <div id="show1_pic">
-                    <img src="images/background.jpg" width="33.33vw">
+                <div id="show_content">
+                    <div id="show_intr">
+                        <p>这是内容 </p>
+                    </div>
+                    <div id="show_intr">
+                        <p>你很快发现了售卖艺术品的关键所在——展览上的艺术品这么多，游客根本无法一次性看那么多。 如何处理艺术品这个问题，在你的心中萦绕不去;机缘巧合，在艺术学院的选修课上，你报上了一 门名为《Web 应用基础》的课程，在这门课上，你学会了如何用 HTML、CSS、JS 打造令人窒息 的网页。你怎么也没有想到，你的所学，此刻为你打开了一道解决问题的大门。 </p>
+                    </div>
+                    <div id="show_intr">
+                        <p>你很快发现了售卖艺术品的关键所在——展览上的艺术品这么多，游客根本无法一次性看那么多。 如何处理艺术品这个问题，在你的心中萦绕不去;机缘巧合，在艺术学院的选修课上，你报上了一 门名为《Web 应用基础》的课程，在这门课上，你学会了如何用 HTML、CSS、JS 打造令人窒息 的网页。你怎么也没有想到，你的所学，此刻为你打开了一道解决问题的大门。 </p>
+                    </div>
                 </div>
-                <div id="show1_intr">
-                    <p>213 </p>
+                <div id="show_detials">
+                    <div id="learn_more">
+                        <a href="details.html" >LEARN MORE </a>
+                    </div>
+
+                    <div id="learn_more">
+                        <a href="details.html" >LEARN MORE </a>
+                    </div>
+                    <div id="learn_more">
+                        <a href="details.html" >LEARN MORE </a>
+                    </div>
                 </div>
-            </div>
-            <div id="show3">
-                <div id="show1_pic">
-                    <img src="images/background.jpg" width="33.33vw">
-                </div>
-                <div id="show1_intr">
-                    <p>213 </p>
-                </div>
+            
             </div>
         </div>
     </div>
+    
+
+
+
+<!-- 这个是用来遮罩的 -->
+<div id="modelDiv">
+    </div>
+    <!-- 这个是用来展示弹框内容的 -->
+    <div id="model">
+        <div style="float: right;height: 20px; width: 20px;border-radius: 50%; border: 2px solid red;text-align: center;" onclick="closeModel()">
+            X
+        </div>
+        弹出窗口
+    </div>
+
+
+
+
 
 </body>
 
 
+<script src="js/login_or_register.js"></script>
