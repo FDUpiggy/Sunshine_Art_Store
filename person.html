@@ -1,0 +1,276 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>圣翔艺术商城</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login_or_register.css">
+</head>
+
+<body>
+        <header>
+                <nav>
+                    <div id="logo">
+                        <img  src="images/logo.jpeg" width="128px" height="36px">
+                    </div>
+                    <div>
+                    <p class="nav-text" >欢迎来到<strong class="name">Art Store</strong></p>
+                    </div>
+                    <div id="detail-login" >
+                        <a class="text-color" href="javascript:loginModel()">登陆</a>
+                        <span class="nav-text">或</span>
+                        <a  class="text-color" href="javascript:registerModel()">注册</a>
+                    
+        
+                </div>
+                    <ul>
+                        <li>
+                            <a id="loginStatus" href="details.html">未登录</a>
+                        </li>
+                        <li>
+                            <a href="./shopping.html">购物车</a>
+                        </li>
+                        <li>
+                            <a id="logout" href="javascript:logOut()">登出</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section>
+                        <div>
+                            <h1>&nbsp;&nbsp;圣翔艺术商城</h1>
+                        </div>
+                        <div>
+                            <form>
+                                <input id="search" type="text" name="search">
+                                <input class="pointer " type="submit" value=" 搜索" name="search-sub" onclick="javascript:searchSub()">
+                            </form>
+                        </div>
+            
+                    </div>
+                </section>
+                <div >
+                    <ul class="header-choice" >
+                        <li class="nav1_li">
+                            <a class="nav1_a" href="index.html" id="home"  title="首页">首页</a>
+                        </li>
+                        <li class="nav1_li">
+                            <a class="nav1_a" href="search.html" id="search"  title="搜索">搜索</a>
+                        </li>
+                        <li class="nav1_li">
+                            <a class="nav1_a" href="details.html" id="detail"  title="详情">详情</a>
+                        </li>
+                        <li class="nav1_li">
+                            <a class="nav1_a" href="#" id="sub"  title="sub">发布艺术品</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+<main class="display-flex-row margin-20px">
+    <section class="display-flex-column margin-20px col-2">
+        <div class="border-for-detail">
+            <table>
+                <tr>
+                    <td class="cell-padding-5px">用户：</td>
+                    <td>sakura123</td>
+                </tr>
+                <tr>
+                    <td class="cell-padding-5px">电话：</td>
+                    <td>13166666666</td>
+                </tr>
+                <tr>
+                    <td class="cell-padding-5px">邮箱：</td>
+                    <td>name@example.com</td>
+                </tr>
+                <tr>
+                    <td class="cell-padding-5px">地址：</td>
+                    <td>松花江路2500号</td>
+                </tr>
+                <tr>
+                    <td class="cell-padding-5px">余额：</td>
+                    <td>123456$</td>
+                </tr>
+            </table>
+            <div class="display-flex-row display-flex-justify-content cell-padding-5px">
+                <div><button class="button-style" onclick="window.open('./images/pay.jpeg');alert('氪金一时爽，一直氪金一直爽！');">充值信仰</button></div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="display-flex-column col-8 margin-20px ">
+        <div>
+            <div class="border-for-detail margin-20px">我上传的艺术品：
+            <div class="border-for-detail margin-20px">
+                    <table class="col-12 ">
+                        <tr class="col-12">
+                            <td class="col-3 center cell-padding-5px"> 商品名称</td>
+                            <td class="col-3 center ">作者</td>
+                            <td class="col-6 center">描述</td>
+                        </tr>
+                        <tr>
+                            <td class="center cell-padding-5px" >Les Demoiselles d'Avignon</td>
+                            <td class="center">Pablo Picasso
+                                </td>
+                            <td class="center">Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ...</td>
+                        </tr>
+                        <tr>
+                            <td class="center cell-padding-5px" >Luncheon on the Grass</td>
+                            <td class="center">Edouard Manet
+                                </td>
+                            <td class="center">The Luncheon on the Grass (Le déjeuner sur l'herbe) was rejected by the Paris Salon in 1863  ...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="display-flex-column">
+            <div class="border-for-detail margin-20px">我购买的艺术品：
+            <div class="border-for-detail margin-20px">
+                <table class="col-12 ">
+                    <tr class="col-12">
+                        <td class="col-3 center cell-padding-5px">订单编号</td>
+                        <td class="col-3 center ">商品名称</td>
+                        <td class="col-3 center">订单时间</td>
+                        <td class="col-3 center">订单金额</td>
+                    </tr>
+                    <tr>
+                        <td class="center cell-padding-5px" >20190526060</td>
+                        <td class="center">Sunflowers</td>
+                        <td class="center">2019.5.26</td>
+                        <td class="center">$10000</td>
+                    </tr>
+                    <tr>
+                        <td class="center cell-padding-5px" >20190530473</td>
+                        <td class="center">WAngli</td>
+                        <td class="center">2019.5.26</td>
+                        <td class="center">$12500</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div class="border-for-detail margin-20px">我卖出的艺术品：
+                    <div class="border-for-detail margin-20px">
+                            <table class="col-12 ">
+                                <tr class="col-12">
+                                    <td class="col-3 center cell-padding-5px">订单编号</td>
+                                    <td class="col-3 center ">商品名称</td>
+                                    <td class="col-3 center">订单时间</td>
+                                    <td class="col-3 center">订单金额</td>
+                                </tr>
+                                <tr>
+                                    <td class="center cell-padding-5px" >20190526060</td>
+                                    <td class="center">Sunflowers</td>
+                                    <td class="center">2019.5.26</td>
+                                    <td class="center">$10000</td>
+                                </tr>
+                                <tr>
+                                    <td class="center cell-padding-5px" >20190530473</td>
+                                    <td class="center">WAngli</td>
+                                    <td class="center">2019.5.26</td>
+                                    <td class="center">$12500</td>
+                                </tr>
+                            </table>
+                        </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+<footer>
+        <p>Posted by: piggy</p>
+        <p>&nbsp;&nbsp;Contact information: <a href="piggy_zbw@pm.me">piggy_zbw@pm.me</a>.</p>
+    </footer>
+
+
+
+<div id="hideDiv"></div>
+
+<section id="register" class="model">
+    
+        <form action="#" method="GET" class="display-flex-column">
+            <table class="margin-20px"> 
+                <tbody class="display-flex-column">
+                <tr class="border display-flex-row">
+                    <td class="td-text-right col-2" >用户名：</td>
+                    <td class="col-4"><input id="regusername" type="username" name="username" placeholder="用户名" onchange="checkUse()" required></td>
+                    <td class="col-6" id="usernameCheckbox">* 请输入用户名</td>
+                </tr>
+                <tr class="border display-flex-row">
+                    <td class='td-text-right col-2'>密码：</td>
+                    <td class="col-4"><input id="regpassword" type="password" name="password"  placeholder="密码" onchange="checkPwd()" required></td>
+                    <td  class="col-6"  id="passwordCheckbox" >* 请输入密码</td>
+                </tr>
+                <tr class="border display-flex-row">
+                    <td class="td-text-right col-2">确认密码：</td>
+                    <td class="col-4"><input id="repassword" type="password" name="repassword" placeholder="确认密码" onchange="checkPwdc()" required></td>
+                    <td class="col-6" id="passwordCheckbox2">* 请确认密码</td>
+                </tr>
+                <tr class="border display-flex-row">
+                    <td class="td-text-right col-2">邮箱：</td>
+                    <td class="col-4"><input id="email" type="email" name="email" placeholder="邮箱" onchange="checkEmail()" required></td>
+                    <td class="col-6" id="emailCheckbox">* 请输入邮箱</td>
+                </tr>
+                <tr class="border display-flex-row">
+                    <td class="td-text-right col-2">电话：</td>
+                    <td class="col-4"><input id="tel"  type="tel" name="tel" placeholder="电话号码" onchange="checkTel()" required></td>
+                    <td class="col-6" id="telCheckbox">* 请输入电话号码</td>
+                </tr>
+                <tr class="border display-flex-row">
+                    <td class="td-text-right col-2">地址：</td>
+                    <td class="col-4"><input id="addr"  type="addr" name="addr" placeholder="地址" onchange="checkAddr()" required></td>
+                    <td class="col-6"  id="addrCheckbox">* 请输入地址</td>
+                </tr>
+            </tbody>
+                </table>
+            
+                <section class="display-flex-row center">
+                
+            <div class="col-5 center">
+            <input class="submit button-style" type="submit" placeholder="注册" name="submit" onclick="regSub()" >
+        </div>
+        <div class="col7 center">
+            <button class="button-style" onclick="closeModel()">退出</button>
+            
+        </div>
+    </section>
+            </form>
+            
+</section>
+
+<section id="login" class="model ">
+    
+    <form action="#" class="display-flex-column center " method="GET">
+        <table class="margin-20px">
+            <tbody class="">
+            <tr class="border">
+                <td class="td-text-right col-4">用户名：</td>
+                <td><input id="username" class="" type="username" name="username"  required></td>
+            </tr>
+            <tr class="border">
+            <td class="td-text-right">密码：</td>
+            <td><input id="password" class="" type="password" name="password"  required></td>
+            </tr>
+        </tbody>
+        </table>
+        
+        <section class="display-flex-row center">
+        <div class="col-5 center">
+            <input class="submit button-style " type="submit" onclick="javascript:loginSub()" value="登陆" name="login">
+        </div>
+        <div class="col-7 center">
+            <button class="button-style " onclick="closeModel()">退出</button>
+        </div>
+        </section>
+        </form>
+        
+</section>
+
+
+</body>
+<script src="js/main.js"></script>

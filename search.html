@@ -1,0 +1,478 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>圣翔艺术商城</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login_or_register.css">
+</head>
+
+<body>
+        <header>
+                <nav>
+                    <div id="logo">
+                        <img  src="images/logo.jpeg" width="128px" height="36px">
+                    </div>
+                    <div>
+                    <p class="nav-text" >欢迎来到<strong class="name">Art Store</strong></p>
+                    </div>
+                    <div id="detail-login" >
+                        <a class="text-color" href="javascript:loginModel()">登陆</a>
+                        <span class="nav-text">或</span>
+                        <a  class="text-color" href="javascript:registerModel()">注册</a>
+                    
+        
+                </div>
+                    <ul>
+                        <li>
+                            <a id="loginStatus" href="details.html">未登录</a>
+                        </li>
+                        <li>
+                            <a href="./shopping.html">购物车</a>
+                        </li>
+                        <li>
+                            <a id="logout" href="javascript:logOut()">登出</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section>
+                        <div>
+                            <h1>&nbsp;&nbsp;圣翔艺术商城</h1>
+                        </div>
+                        <div>
+                            <form>
+                                <input id="search" type="text" name="search">
+                                <input class="pointer " type="submit" value=" 搜索" name="search-sub" onclick="javascript:searchSub()">
+                            </form>
+                        </div>
+            
+                    </div>
+                </section>
+                <div >
+                    <ul class="header-choice" >
+                        <li class="nav1_li">
+                            <a class="nav1_a" href="index.html" id="home"  title="首页">首页</a>
+                        </li>
+                        <li class="nav1_li">
+                            <a class="nav1_a" href="search.html" id="search"  title="搜索">搜索</a>
+                        </li>
+                        <li class="nav1_li">
+                            <a class="nav1_a" href="details.html" id="detail"  title="详情">详情</a>
+                        </li>
+                        <li class="nav1_li">
+                            <a class="nav1_a" href="#" id="sub"  title="sub">发布艺术品</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+    <main>
+        <div class="margin-20px">
+            <h1>搜索结果：</h1>
+        </div>
+
+        <div class="display-flex-row display-flex-end margin-2px-20px col-10">
+            <div >排序方式：</div>
+            <select>
+                <option value ="volvo">价格</option>
+                <option value ="saab">热度</option>
+                <option value="opel">作者首字母（升序）</option>
+                <option value="audi">作品首字母（升序）</option>
+            </select>
+        </div>
+        <section class="display-flex-row display-flex-wrap margin-20px">
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            <article class="col-3 margin-20px border-for-detail">
+                <div class="display-flex-row">
+                    <div class="margin-20px">
+                    <img src="images/small1.jpg">
+                    </div>
+                    <div class="margin-20px display-flex-column display-flex-justify-content">
+                        <p class="margin-2px">Les Demoiselles d'Avignon</p>
+                        <em class="margin-2px">Pablo Picasso</em>
+                    </div>
+                </div>
+                <div class="margin-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios ......</p>
+                </div>
+                <div class="margin-20px display-flex-row display-flex-justify-content">
+                    <div class="col-6 center">
+                    <button class="button-style" onclick="window.location.href='details.html';">查看</button>
+                </div>
+                <div class="col-6 center">
+                    <button disabled="disabled" class="button-style">热度:0</div>
+                </div>
+            </div>
+                
+            </article>
+            
+
+            
+        </section>
+        <div class="digg">
+                <span class="disabled">&lt; </span>
+                <span class="current">1</span>
+                <a href="#?page=2">2</a>
+                <a href="#?page=3">3</a>
+                <a href="#?page=4">4</a>
+                <a href="#?page=5">5</a>
+                <a href="#?page=6">6</a>
+                <a href="#?page=7">7</a>
+                ...
+                <a href="#?page=199">199</a>
+                <a href="#?page=200">200</a>
+                <a href="#?page=2"> 
+                &gt; </a></div> 
+        </div>
+    </main>
+
+
+
+    <footer>
+            <p>Posted by: piggy</p>
+            <p>&nbsp;&nbsp;Contact information: <a href="piggy_zbw@pm.me">piggy_zbw@pm.me</a>.</p>
+        </footer>
+    
+    
+    
+    <div id="hideDiv"></div>
+    
+    <section id="register" class="model">
+        
+            <form action="#" method="GET" class="display-flex-column">
+                <table class="margin-20px"> 
+                    <tbody class="display-flex-column">
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2" >用户名：</td>
+                        <td class="col-4"><input id="regusername" type="username" name="username" placeholder="用户名" onchange="checkUse()" required></td>
+                        <td class="col-6" id="usernameCheckbox">* 请输入用户名</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class='td-text-right col-2'>密码：</td>
+                        <td class="col-4"><input id="regpassword" type="password" name="password"  placeholder="密码" onchange="checkPwd()" required></td>
+                        <td  class="col-6"  id="passwordCheckbox" >* 请输入密码</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2">确认密码：</td>
+                        <td class="col-4"><input id="repassword" type="password" name="repassword" placeholder="确认密码" onchange="checkPwdc()" required></td>
+                        <td class="col-6" id="passwordCheckbox2">* 请确认密码</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2">邮箱：</td>
+                        <td class="col-4"><input id="email" type="email" name="email" placeholder="邮箱" onchange="checkEmail()" required></td>
+                        <td class="col-6" id="emailCheckbox">* 请输入邮箱</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2">电话：</td>
+                        <td class="col-4"><input id="tel"  type="tel" name="tel" placeholder="电话号码" onchange="checkTel()" required></td>
+                        <td class="col-6" id="telCheckbox">* 请输入电话号码</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2">地址：</td>
+                        <td class="col-4"><input id="addr"  type="addr" name="addr" placeholder="地址" onchange="checkAddr()" required></td>
+                        <td class="col-6"  id="addrCheckbox">* 请输入地址</td>
+                    </tr>
+                </tbody>
+                    </table>
+                
+                    <section class="display-flex-row center">
+                    
+                <div class="col-5 center">
+                <input class="submit button-style" type="submit" placeholder="注册" name="submit" onclick="regSub()" >
+            </div>
+            <div class="col7 center">
+                <button class="button-style" onclick="closeModel()">退出</button>
+                
+            </div>
+        </section>
+                </form>
+                
+    </section>
+    
+    <section id="login" class="model ">
+        
+        <form action="#" class="display-flex-column center " method="GET">
+            <table class="margin-20px">
+                <tbody class="">
+                <tr class="border">
+                    <td class="td-text-right col-4">用户名：</td>
+                    <td><input id="username" class="" type="username" name="username"  required></td>
+                </tr>
+                <tr class="border">
+                <td class="td-text-right">密码：</td>
+                <td><input id="password" class="" type="password" name="password"  required></td>
+                </tr>
+            </tbody>
+            </table>
+            
+            <section class="display-flex-row center">
+            <div class="col-5 center">
+                <input class="submit button-style " type="submit" onclick="javascript:loginSub()" value="登陆" name="login">
+            </div>
+            <div class="col-7 center">
+                <button class="button-style " onclick="closeModel()">退出</button>
+            </div>
+            </section>
+            </form>
+            
+    </section>
+    
+
+
+</body>
+
+<script src="js/main.js"></script>

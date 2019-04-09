@@ -1,5 +1,4 @@
 <!doctype html>
-<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+     <header>
         <nav>
             <div id="logo">
                 <img  src="images/logo.jpeg" width="128px" height="36px">
@@ -68,98 +67,115 @@
             </ul>
         </div>
     </header>
-    <main class="display-flex-row">
-        <section class="display-flex-column col-9 margin-20px">
-            <div class="display-flex-column ">
-                <div class="margin-2px-20px">
-                    <p class="h2">Cardinal Fernando Nino de Guevara</p>
-                </div>
-                <div class="margin-2px-20px">
-                    <a href="search.html"><em>Greco Greece</em></a>
-                </div>
-            </div>
-            <div class="display-flex-row margin-20px">
-                <div class="col-4">
-                    <img src="images/item.jpg">
-                </div>
-                <article class="display-flex-column col-8 margin-20px">
-                   <div class="margin-20px">
-                        <p>This intense portrait depicts Fernando Niño de Guevara (1541–1609), who in 1596 was named cardinal and is dressed as such here. In 1599 he became Inquisitor General of Spain but resigned in 1602 to serve the rest of his life as Archbishop of Seville. The painting probably dates from the spring of 1600 when the cardinal was in Toledo with Philip III and members of the Madrid court. El Greco had lived in Venice and in the Farnese Palace in Rome, where Titian’s portraits (such as those of the Farnese Pope Paul III) would have revealed to the Greek painter the psychological possibilities of portraiture.</p>
-                   </div>
-                   <div class="margin-20px display-flex-row">
-                        <p>price:&nbsp;</p><strong>800,0000$</strong>
-                   </div>
-                   <div class="margin-20px">
-                        <button class="button-style">Add to wish list</button>
-                        <button class="button-style" onclick="javascript:addToShopList()">Add to shopping list</button>
-                   </div>
+    
 
-                   <div class="display-flex-column">
-                        <strong class="center col-9" >&nbsp;product details</strong>
-
-                       <table class="margin-20px col-9 border-for-detail" >
-                            <tr class="tr-col-span-2 border-for-detail ">
-                            
-                                <td class="cell-padding-5px col-5 ">Date</td>
-                                <td class="cell-padding-5px col-7">1600</td>
-                            </tr>
-                            <tr class="border-for-detail">
-                                <td class="cell-padding-5px">Medium</td>
-                                <td class="cell-padding-5pxs">Oil on canvas</td>
-                            </tr>
-                            <tr class="border-for-detail">
-                                <td class="cell-padding-5px">Dimensions</td>
-                                <td class="cell-padding-5px">108cm X 170cm</td>
-                            </tr>
-                            <tr class="border-for-detail">
-                                <td class="cell-padding-5px">Home</td>
-                                <td class="cell-padding-5px">Baltimore Art Museum</td>
-                            </tr>
-                            <tr class="border-for-detail">
-                                <td class="cell-padding-5px">Genres</td>
-                                <td class="cell-padding-5px">Neociassical</td>
-                            </tr>
-                            <tr class="border-for-detail">
-                                <td class="cell-padding-5px">Subjects</td>
-                                <td class="cell-padding-5px">People Family</td>
-                            </tr>
-                            <tr>
-                                <td class="cell-padding-5px">Heat</td>
-                                <td class="cell-padding-5px">13</td>
-                            </tr>
-                       </table>
-                   </div> 
-                </article>
-            </div>
-
-        </section>
-        <nav class="display-flex-column col-3 margin-20px">
-            <article class="col-6 margin-20px">
-                <ul>
-                    <p class="border-for-detail cell-padding-5px center">流行艺术家</p>
-                    <li class="border-for-detail cell-padding-5px center"><em>Pablo Picasso</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Henri Matisse</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Jacques-Louis David</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Jean-Auguste-Dominique Ingres</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Eugene Delacroix</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Francisco Goya</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Gustave Courbet</em></li>
-                </ul>
+<main class="display-flex-column ">
+    <div>
+        <div class="margin-20px h2">购物车</div>
+    </div>
+    <section class=" display-flex-column margin-2px-20px">
+        <div class="display-flex-column margin-20px border-for-detail">
+            
+            <article id="#item1" class="display-flex-row margin-20px border-for-detail">
+                <div class="col-1 margin-20px ">
+                    <img src="images/item.jpg" width="100px" >
+                </div>
+                <div class="display-flex-column col-9 display-flex-justify-content margin-20px">
+                    <div class="margin-2px-20px">Cardinal Fernando Nino de Guevara</div>
+                    <div class="margin-2px-20px" ><em>Greco Greece</em></div>
+                    <div class="margin-20px" >This intense portrait depicts Fernando Niño de Guevara (1541–1609), who in 1596 was named cardinal and is dressed as such here ......</div>
+                    <div class="display-flex-row margin-20px">
+                        <div class="col-5 ">
+                        <button disabled="disabled" class="button-style">价格：$800,0000
+                            </button>
+                    </div>
+                        <button class="button-style" onclick="javascript:rmFromShopList('#item1')" >删除</button>
+                    </div>
+                </div>
             </article>
-            <article class="col-6 margin-20px">
-                <ul>
-                    <p class="border-for-detail cell-padding-5px center">流行流派</p>
-                    <li class="border-for-detail cell-padding-5px center"><em>Cubism</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Romanticism</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Realism</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Impressionism</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Post-Impressionism</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Fauvism</em></li>
-                    <li class="border-for-detail cell-padding-5px center"><em>Surrealism</em></li>
-                </ul>
+            
+            <article id="#item2" class="display-flex-row margin-20px border-for-detail">
+                <div class="col-1 margin-20px ">
+                    <img src="images/small1.jpg" width="100px" >
+                </div>
+                <div class="display-flex-column col-9 display-flex-justify-content margin-20px">
+                    <div class="margin-2px-20px">Cardinal Fernando Nino de Guevara</div>
+                    <div class="margin-2px-20px" ><em>Greco Greece</em></div>
+                    <div class="margin-20px" >This intense portrait depicts Fernando Niño de Guevara (1541–1609), who in 1596 was named cardinal and is dressed as such here ......</div>
+                    <div class="display-flex-row margin-20px">
+                        <div class="col-5 ">
+                        <button disabled="disabled" class="button-style">价格：$800,0000
+                            </button>
+                    </div>
+                        <button class="button-style" onclick="javascript:rmFromShopList('#item2')" >删除</button>
+                    </div>
+                </div>
             </article>
-        </nav>
-    </main>
+
+            <article id="#item3" class="display-flex-row margin-20px border-for-detail">
+                <div class="col-1 margin-20px ">
+                    <img src="images/small2.jpg" width="100px" >
+                </div>
+                <div class="display-flex-column col-9 display-flex-justify-content margin-20px">
+                    <div class="margin-2px-20px">Cardinal Fernando Nino de Guevara</div>
+                    <div class="margin-2px-20px" ><em>Greco Greece</em></div>
+                    <div class="margin-20px" >This intense portrait depicts Fernando Niño de Guevara (1541–1609), who in 1596 was named cardinal and is dressed as such here ......</div>
+                    <div class="display-flex-row margin-20px">
+                        <div class="col-5 ">
+                        <button disabled="disabled" class="button-style">价格：$800,0000
+                            </button>
+                    </div>
+                        <button class="button-style" onclick="javascript:rmFromShopList('#item3')" >删除</button>
+                    </div>
+                </div>
+            </article>
+
+            <article id="#item4" class="display-flex-row margin-20px border-for-detail">
+                <div class="col-1 margin-20px ">
+                    <img src="images/small3.jpg" width="100px" >
+                </div>
+                <div class="display-flex-column col-9 display-flex-justify-content margin-20px">
+                    <div class="margin-2px-20px">Cardinal Fernando Nino de Guevara</div>
+                    <div class="margin-2px-20px" ><em>Greco Greece</em></div>
+                    <div class="margin-20px" >This intense portrait depicts Fernando Niño de Guevara (1541–1609), who in 1596 was named cardinal and is dressed as such here ......</div>
+                    <div class="display-flex-row margin-20px">
+                        <div class="col-5 ">
+                        <button disabled="disabled" class="button-style">价格：$800,0000
+                            </button>
+                    </div>
+                        <button class="button-style" onclick="javascript:rmFromShopList('#item4')" >删除</button>
+                    </div>
+                </div>
+            </article>
+
+            
+
+
+
+            <div class="display-flex-row display-flex-end margin-20px">
+                    <button class="button-style col-1" onclick="javascript:pay()">结款</button>
+                </div>
+
+                <div class="digg">
+                        <span class="disabled">&lt; </span>
+                        <span class="current">1</span>
+                        <a href="#?page=2">2</a>
+                        <a href="#?page=3">3</a>
+                        <a href="#?page=4">4</a>
+                        <a href="#?page=5">5</a>
+                        <a href="#?page=6">6</a>
+                        <a href="#?page=7">7</a>
+                        ...
+                        <a href="#?page=199">199</a>
+                        <a href="#?page=200">200</a>
+                        <a href="#?page=2"> 
+                        &gt; </a></div> 
+                </div>
+    </div>
+        
+    </section>
+</main>
+
 
     <footer>
         <p>Posted by: piggy</p>
@@ -251,7 +267,7 @@
             
 </section>
 
+
 </body>
 
 <script src="js/main.js"></script>
-</html>

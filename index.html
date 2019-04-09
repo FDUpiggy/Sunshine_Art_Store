@@ -1,116 +1,291 @@
 <!doctype html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>圣翔艺术商城</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/login_or_register.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+    </head>
+    <body>
+        <header class="main">
+            <nav>
+                <div class="col-8 display-flex-row">
+                <div id="logo">
+                    <img  src="images/logo.jpeg" width="128px" height="36px">
+                </div>
+                <p id="name">圣翔艺术商城</p>
+                <p id="slogan">Position zero，this is tendomaya!</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="search.html">搜索</a>
+                    </li>
+                    <li>
+                        <a href="details.html">详情</a>
+                    </li>
+                    <li id="login-li" class="">
+                        <a id="login-a" href="javascript:loginModel()">登陆</a>
+                    </li>
+                    <li id="register-li" class="register-li">
+                        <a id="register-a" href="javascript:registerModel()">注册</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="display-flex-column">
+                <div class="photo" id="photo">
+                        <!--//1-->
+                        <input type="radio" name="btn" id="img1" checked/>
+                        <div class="control">
+                            <div class="image">
+                                <a href="details.html" >
+                                <img class="img-data" src="images/background1.jpg"/>
+                            </a>
+                            </div>
+                            <div class="nav">
+                                <label for="img6" class="up leftjianbian"><</label>
+                                <label for="img2" class="down rightjianbian">></label>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--//2-->
+                        <input type="radio" name="btn" id="img2"/>
+                        <div class="control">
+                            <a href="details.html" >
+                            <div class="image"><img class="img-data" src="images/background2.jpg"/></div>
+                            </a>
+                            <div class="nav">
+                                <label for="img1" class="up leftjianbian"><</label>
+                                <label for="img3" class="down rightjianbian">></label>
+                            </div>
+                        </div>
+                        <!--//3-->
+                        <input type="radio" name="btn" id="img3"/>
+                        <div class="control">
+                            <a href="details.html" >
+                            <div class="image"><img class="img-data" src="images/background3.jpg"/></div>
+                            </a>
+                            <div class="nav">
+                                <label for="img2" class="up leftjianbian"><</label>
+                                <label for="img4" class="down rightjianbian">></label>
+                            </div>
+                        </div>
+                        <!--//4-->
+                        <input type="radio" name="btn" id="img4"/>
+                        <div class="control">
+                            <a href="details.html" >
+                            <div class="image"><img class="img-data" src="images/background4.jpg"/></div>
+                            </a>
+                            <div class="nav">
+                                <label for="img3" class="up leftjianbian"><</label>
+                                <label for="img5" class="down rightjianbian">></label>
+                            </div>
+                        </div>
+                        <!--//5-->
+                        <input type="radio" name="btn" id="img5"/>
+                        <div class="control">
+                            <a href="details.html" >
+                            <div class="image"><img class="img-data" src="images/background5.jpg"/></div>
+                            </a>
+                        
+                            <div class="nav">
+                                <label for="img4" class="up leftjianbian"><</label>
+                                <label for="img6" class="down rightjianbian">></label>
+                            </div>
+                        </div>
+                        <!--//6-->
+                        <input type="radio" name="btn" id="img6"/>
+                        <div class="control">
+                            <a href="details.html" >
+                            <div class="image"><img class="img-data" src="images/background6.jpg"/></div>
+                            </a>
+                            <div class="nav">
+                                <label for="img5" class="up leftjianbian"><</label>
+                                <label for="img1" class="down rightjianbian">></label>
+                            </div>
+                        </div>
+                        
+                    <div class="clear"></div>
 
-    <title>圣翔艺术商城</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/login_or_register.css">
-</head>
-<body>
-    <div class="header">
-        <div class="title" id="title" >
-            <div id="logo">
-                <img  src="images/logo.jpeg" width="41%" height="50vh">
-            </div>
-            <div id="name">
-                <p>圣翔艺术商城</p>
-            </div>
-            <div id="slogan">
-                <p ><br>Position zero，this is tendomaya!</p>
-            </div>
-            <ul class="header-choice" id="navbar">
-                <li>
-                    <a href="index.html" id="home" >首页</a>
-                </li>
-                <li>
-                    <a href="search.html" id="search" title="搜索">搜索</a>
-                </li>
-                <li>
-                    <a href="details.html" id="details"  title="详情">详情</a>
-                </li>
-                <li>
-                    <a href="javascript:login_model()"; id="login"  title="登陆">登陆</a>
-                </li>
-                <li>
-                    <a href="register.html" id="register"  title="注册">注册</a>
-                </li>
-            </ul>
-        </dv>i
-    </div>
-    <div class>
-        <div class="show" id='show_canvas'>
-            <div id="show">
-                <div id='pic'>
-                    <div id="show_pic">
-                        <img src="images/author.jpg" width="20%" >
+                    <div class="dots">
+                            <label for="img1" class="dot pointer" id="dot1"></label>
+                            <label for="img2" class="dot pointer" id="dot2"></label>
+                            <label for="img3" class="dot pointer" id="dot3"></label>
+                            <label for="img4" class="dot pointer" id="dot4"></label>
+                            <label for="img5" class="dot pointer" id="dot5"></label>
+                            <label for="img6" class="dot pointer" id="dot6"></label>
+                        </div>
                     </div>
-                    <div id="show_pic">
-                        <img src="images/author.jpg" width="20%" >
-                    </div>
-                    <div id="show_pic">
-                        <img src="images/author.jpg" width="20%" >
-                    </div>
-                </div>
-                <div id="s_title">
-                    <div id="show_title">
-                        <p>这是标题 </p>
-                    </div>
-
-                    <div id="show_title">
-                        <p>这是标题 </p>
-                    </div>
-                    <div id="show_title">
-                        <p>这是标题 </p>
-                    </div>
-                </div>
-                <div id="show_content">
-                    <div id="show_intr">
-                        <p>这是内容 </p>
-                    </div>
-                    <div id="show_intr">
-                        <p>你很快发现了售卖艺术品的关键所在——展览上的艺术品这么多，游客根本无法一次性看那么多。 如何处理艺术品这个问题，在你的心中萦绕不去;机缘巧合，在艺术学院的选修课上，你报上了一 门名为《Web 应用基础》的课程，在这门课上，你学会了如何用 HTML、CSS、JS 打造令人窒息 的网页。你怎么也没有想到，你的所学，此刻为你打开了一道解决问题的大门。 </p>
-                    </div>
-                    <div id="show_intr">
-                        <p>你很快发现了售卖艺术品的关键所在——展览上的艺术品这么多，游客根本无法一次性看那么多。 如何处理艺术品这个问题，在你的心中萦绕不去;机缘巧合，在艺术学院的选修课上，你报上了一 门名为《Web 应用基础》的课程，在这门课上，你学会了如何用 HTML、CSS、JS 打造令人窒息 的网页。你怎么也没有想到，你的所学，此刻为你打开了一道解决问题的大门。 </p>
-                    </div>
-                </div>
-                <div id="show_detials">
-                    <div id="learn_more">
-                        <a href="details.html" >LEARN MORE </a>
-                    </div>
-
-                    <div id="learn_more">
-                        <a href="details.html" >LEARN MORE </a>
-                    </div>
-                    <div id="learn_more">
-                        <a href="details.html" >LEARN MORE </a>
-                    </div>
-                </div>
+                
+               
             
+            <section class="display-flex-row margin-20px">
+                <div class="col-4 center ">
+                    <a href="./details.html">
+                    <img src="images/small1.jpg" height="20%" >
+                </a>
+                </div>
+                <div class="col-4 center ">
+                    <a href="details.html">
+                    <img src="images/small2.jpg" height="20%" >
+                </a>
+                </div>
+                <div class="col-4 center">
+                    <a href="./details.html">
+                    <img src="images/small3.jpg" height="20%" >
+                </a>
+                </div>
+            </section>
+            <section class="display-flex-row margin-2px-20px">
+                <div class="col-4 center">
+                    <p>Les Demoiselles d'Avignon</p>
+                </div>
+                <div class="col-4 center">
+                    <p>Luncheon on the Grass</p>
+                </div>
+                <div class="col-4 center">
+                    <p>Self Portrait With A Palette</p>
+            </section>
+            <section class="display-flex-row margin-2px-20px">
+                    <div class="col-4 center">
+                        <em>Pablo Picasso</em>
+                    </div>
+                    <div class="col-4 center">
+                        <em>Edouard Manet</em>
+                    </div>
+                    <div class="col-4 center">
+                        <em>Pablo Picasso</em>
+                </section>
+            <section class="display-flex-row margin-20px">
+                <div class="col-4 center margin-2px-20px padding-lr-20px">
+                    <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso known as Pablo Ruiz Picasso was a Spanish painter, draughtsman, and sculptor who lived most of his life in France. He is widely known for co-founding the Cubist movement and for the wide variety of styles that he helped develop and explore. Among his most famous works are the proto-Cubist Les Demoiselles d'Avignon (1907) and Guernica (1937), a portrayal of the German bombing of Guernica during the Spanish Civil War. </p>
+                </div>
+                <div class="col-4 center padding-lr-20px">
+                    <p><em>The Luncheon on the Grass</em> (Le déjeuner sur l'herbe) was rejected by the Paris Salon in 1863 but Manet exhibited it at the Salon des Refusés (Salon of the Rejected) later in the year. Emperor Napoleon III had initiated The Salon des Refusés after the Paris Salon rejected more than 4,000 paintings in 1863.
+                        The painting's juxtaposition of fully dressed men and a nude woman was controversial, as was its abbreviated, sketch-like handling, an innovation that distinguished Manet from Courbet. At the same time, Manet's composition reveals his study of the old masters, as the disposition of the main figures is derived from Marcantonio Raimondi's engraving of the Judgement of Paris (c. 1515) based on a drawing by Raphael.
+                        Two additional works that are cited by scholars as important precedents for Le déjeuner sur l'herbe are <em>Pastoral Concert</em> (c. 1510, The Louvre) and <em>The Tempest</em> (Gallerie dell'Accademia, Venice), both of which are attributed variously to Italian Renaissance masters Giorgione or Titian. The Tempest is an enigmatic painting that features a fully dressed man and a nude woman in a rural setting. The man is standing to the left and gazing to the side, apparently at the woman, who is seated and is breastfeeding a baby; the relationship between the two figures is unclear. In Pastoral Concert, two clothed men and a nude woman are seated on the grass, engaged in music making, while a second nude woman stands beside them.</p>
+                </div>
+                <div class="col-4 center padding-lr-20px">
+                    <p>This self-portrait casts the twenty-five-year-old painter as a hardy, athletic figure and sets the stage for the legend of Picasso as the artistic champion of the twentieth century. In preparatory drawings the artist included a brush in his right hand, but he removed it in this final version. Its absence attests to the notion that creative genius is not simply manual dexterity but the expression of an inner vision, here symbolized by the artist’s intense, staring eyes.</p>
+                </div>
+            </section>
+            <section class="display-flex-row margin-20px">
+                <div class="col-4 center ">
+                    <a href="details.html" >LEARN MORE </a>
+                </div>
+                <div class="col-4 center">
+                    <a href="details.html" >LEARN MORE </a>
+                </div>
+                <div class="col-4 center">
+                    <a href="details.html" >LEARN MORE </a>
+                </div>
+            </section>  
+        </main>
+
+
+        <footer>
+                <p>Posted by: piggy</p>
+                <p>&nbsp;&nbsp;Contact information: <a href="piggy_zbw@pm.me">piggy_zbw@pm.me</a>.</p>
+            </footer>
+
+
+    <div id="hideDiv"></div>
+
+    <section id="register" class="model">
+        
+            <form action="#" method="GET" class="display-flex-column">
+                <table class="margin-20px"> 
+                    <tbody class="display-flex-column">
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2" >用户名：</td>
+                        <td class="col-4"><input id="regusername" type="username" name="username" placeholder="用户名" onchange="checkUse()" required></td>
+                        <td class="col-6" id="usernameCheckbox">* 请输入用户名</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class='td-text-right col-2'>密码：</td>
+                        <td class="col-4"><input id="regpassword" type="password" name="password"  placeholder="密码" onchange="checkPwd()" required></td>
+                        <td  class="col-6"  id="passwordCheckbox" >* 请输入密码</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2">确认密码：</td>
+                        <td class="col-4"><input id="repassword" type="password" name="repassword" placeholder="确认密码" onchange="checkPwdc()" required></td>
+                        <td class="col-6" id="passwordCheckbox2">* 请确认密码</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2">邮箱：</td>
+                        <td class="col-4"><input id="email" type="email" name="email" placeholder="邮箱" onchange="checkEmail()" required></td>
+                        <td class="col-6" id="emailCheckbox">* 请输入邮箱</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2">电话：</td>
+                        <td class="col-4"><input id="tel"  type="tel" name="tel" placeholder="电话号码" onchange="checkTel()" required></td>
+                        <td class="col-6" id="telCheckbox">* 请输入电话号码</td>
+                    </tr>
+                    <tr class="border display-flex-row">
+                        <td class="td-text-right col-2">地址：</td>
+                        <td class="col-4"><input id="addr"  type="addr" name="addr" placeholder="地址" onchange="checkAddr()" required></td>
+                        <td class="col-6"  id="addrCheckbox">* 请输入地址</td>
+                    </tr>
+                </tbody>
+                    </table>
+                
+                    <section class="display-flex-row center">
+                    
+                <div class="col-5 center">
+                <input class="submit button-style" type="submit" placeholder="注册" name="submit" onclick="regSub()" >
             </div>
-        </div>
-    </div>
-    
+            <div class="col7 center">
+                <button class="button-style" onclick="closeModel()">退出</button>
+                
+            </div>
+        </section>
+                </form>
+                
+    </section>
+
+    <section id="login" class="model ">
+        
+        <form action="#" class="display-flex-column center " method="GET">
+            <table class="margin-20px">
+                <tbody class="">
+                <tr class="border">
+                    <td class="td-text-right col-4">用户名：</td>
+                    <td><input id="username" class="" type="username" name="username"  required></td>
+                </tr>
+                <tr class="border">
+                <td class="td-text-right">密码：</td>
+                <td><input id="password" class="" type="password" name="password"  required></td>
+                </tr>
+            </tbody>
+            </table>
+            
+            <section class="display-flex-row center">
+            <div class="col-5 center">
+                <input class="submit button-style " type="submit" onclick="javascript:loginSub()" value="登陆" name="login">
+            </div>
+            <div class="col-7 center">
+                <button class="button-style " onclick="closeModel()">退出</button>
+            </div>
+            </section>
+            </form>
+            
+</section>
+
+
+        </body>
+       
+        
 
 
 
-<!-- 这个是用来遮罩的 -->
-<div id="modelDiv">
-    </div>
-    <!-- 这个是用来展示弹框内容的 -->
-    <div id="model">
-        <div style="float: right;height: 20px; width: 20px;border-radius: 50%; border: 2px solid red;text-align: center;" onclick="closeModel()">
-            X
-        </div>
-        弹出窗口
-    </div>
 
 
 
 
 
-</body>
-
-
-<script src="js/login_or_register.js"></script>
+    <script src="js/main.js"></script>
+</html>
